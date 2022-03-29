@@ -1,0 +1,97 @@
+/* Work Cards */
+.work-card{
+    width:400px;height:300px;
+    position:relative;
+    border-radius: 25px;
+    border: none;
+}
+
+@media(max-width:768px){
+    .work-card{
+        width:300px;height:200px;
+    }
+}
+
+.work-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.overlay{
+    background-image: linear-gradient(to right, rgba(77,71,171,60%),rgba(212,43,140,60%),rgba(128,25,120,60%));
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 25px;
+    align-items: center;
+    visibility: visible;
+    opacity:0;
+    filter:alpha(opacity=0);
+    transition: ease-in-out 0.5s;
+}
+
+.tech-stack-list{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -100px;
+}
+
+.overlay .tech-stack{
+    background-color: var(--lightPink);
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.281);
+}
+
+.ribbon {
+    position: absolute;
+    left: -5px; top: -5px;
+    z-index: 1;
+    overflow: hidden;
+    width: 75px; height: 75px; 
+    text-align: left;
+}
+
+.ribbon span {
+    font-size: 10px;
+    color: #fff; 
+    text-transform: uppercase; 
+    text-align: center;
+    font-weight: bold; line-height: 20px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    width: 100px; display: block;
+    background: #79A70A;
+    background: linear-gradient(var(--lightPink) 0%, var(--secondaryPink) 100%);
+    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 19px; left: -21px;
+}
+
+.work-title{
+    font-weight: bold;
+    font-size: larger;
+}
+
+.work-icon-links a{
+    text-align: center;
+    padding-top: 8px;
+    margin: 0 10px;
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 50%;
+    transition: ease 0.3s;
+}
+
+.work-icon-links a:hover{
+    color: var(--lightPink);
+    border-color: var(--lightPink);
+}

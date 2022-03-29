@@ -1,0 +1,77 @@
+
+
+/* Main Section */
+
+#mainSection h4{
+    color: var(--lightPink);
+    font-weight: bold;
+}
+
+#mainSection h1{
+    font-weight: bold;
+    font-size: 4em;
+}
+
+#mainSection img{
+    border-bottom-left-radius: 200px;
+}
+
+/* Info Section */
+
+.info-card{
+    background-color: transparent;
+    border: none;
+}
+.info-card h3{
+    font-weight: bold;
+}
+.info-card h5, .info-card small{
+    color: var(--lightPink);
+    font-weight: bold;
+}
+
+.info-card img{
+    height: 40px;
+    width: auto;
+}
+
+/* Services Section */
+
+#serviceSection{
+    background-image: linear-gradient(to right, var(--secondaryPink), var(--lightPink), var(--secondaryPurple));
+}
+.service-card{
+    background-color: var(--primaryDark);
+    border-radius: 25px;
+}
+.service-num{
+    font-weight: bold;
+}
+.service-card h2{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.pink-line{
+    border-bottom: 1px solid var(--lightPink);
+    width: 100%;
+}
+.btn-translate{
+    transform: translateY(20px);
+    margin: auto;
+}
+
+.btn-dark-round{
+    background-color: var(--primaryDark);
+}
+.btn-dark-round img{
+    height: 50px;
+    width: auto;
+}
+.service-card p, .service-card li{
+    font-size: 14px;
+}
+
+#contactSection a:hover{
+    color: var(--lightPink);
+}

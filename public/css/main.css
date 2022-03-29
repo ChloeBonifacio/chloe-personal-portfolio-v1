@@ -1,0 +1,197 @@
+
+/* Color Settings */
+:root {
+    --lightPink: #D42B8C;
+    --secondaryPink: #7F1978;
+    --secondaryPurple: #4D47AB;
+    --primaryDark: #111827;
+}
+
+.custom-pink{
+    color: var(--lightPink);
+}
+
+/* Defaulting */
+html {scroll-behavior: smooth;}
+body{
+    overflow-x: hidden;
+    padding: 0;
+    background-color: var(--primaryDark);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+    transition: ease-in-out 0.3s;
+}
+a:hover{text-decoration: none;}
+
+/* Button Styles */
+.btn-custom-gradient{
+    background-image: linear-gradient(to right, var(--secondaryPink), var(--lightPink), var(--secondaryPurple));
+    color: white;
+    font-weight: bold;
+    min-width: 200px;
+    border: none;
+    box-shadow: 0 5px 20px var(--primaryDark);
+}
+.btn-custom-gradient:hover{
+    color: white;
+}
+
+.btn-round{
+    border-radius: 50%;
+    min-height: 100px;
+    min-width: 100px;
+    padding: 20px 10px;
+    align-items: center;
+}
+
+.raise{
+    transition: ease 0.3s;
+}
+
+.raise:hover,
+.raise:focus {
+  transform: translateY(-0.25em);
+}
+
+.btn-pink-round{
+    background-color: var(--lightPink);
+}
+.btn-pink-round img{
+    height: 50px;
+    width: auto;
+}
+
+/* Text Styles */
+.large-title{
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.giant-title{
+    font-size: 4em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Navigation Bar Styling */
+.navbar-toggler i{
+    color: var(--lightPink);
+}
+.navbar-logo{
+    height: 80px;
+    width: 80px;
+}
+
+.navbar-custom{
+    background-color: var(--primaryDark);
+}
+
+.navbar-name h3{
+    color: white;
+}
+.navbar-name p{
+    color: var(--lightPink);
+    font-size: 0.75em;
+}
+
+.nav-link{
+    font-weight: bold;
+    color: white;
+    text-align: left;
+}
+.nav-link:hover{
+    color: var(--lightPink);
+}
+.nav-link .link-num{
+    color: var(--lightPink)
+}
+
+#socialInfo{
+    display: none;
+}
+
+@media (min-width:1000px) {
+    .navbar .nav-link::after{
+        content: "";
+        display: block;
+        width: 50px;
+        height: 5px;
+        background: transparent;
+        top: -15px;
+    }   
+    .navbar .nav-link.active::after{
+        background: var(--lightPink);
+    } 
+
+    /* Sticky Social Links */
+    #socialInfo{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #socialInfo{
+        position: fixed;
+        right: 20px;
+        top: 0;
+    }
+    #socialInfo p{
+        writing-mode: vertical-lr;
+        text-orientation: sideways-right;
+    }
+    #socialInfo a, #socialInfo a:hover{
+        color: white;
+    }
+    #socialInfo .vertical-line{
+        height: 300px;
+        border-right: 1px solid white;
+        width: 30px;
+    }
+}
+
+/* Footer Styles */
+.footer{
+    border-top: 1px solid var(--lightPink);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Contact Styles */
+.input-group-text{
+    background-color: var(--lightPink);
+    color: white;
+    border-color: var(--lightPink);
+}
+
+.input-group .form-control{
+    background-color: transparent;
+    color: white;
+    border-color: var(--lightPink);
+}
+
+textarea.form-control{
+    background-color: transparent;
+    color: white;
+    border-color: var(--lightPink);
+}
+
+textarea.form-control:focus{
+    background-color: transparent;
+    color: white;
+}
+
+@media(max-width:768px){
+    .info-card p{
+        width: 50%;
+        margin: auto;
+    }
+    .main-picture{
+        display: none;
+    }
+}
