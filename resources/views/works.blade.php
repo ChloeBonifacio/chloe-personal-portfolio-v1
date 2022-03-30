@@ -40,9 +40,9 @@
             <div class="ribbon"><span>WORDPRESS</span></div>
             <div class="overlay">
                 <div class="tech-stack-list">
-                    <span class="tech-stack">CSS</span>
-                    <span class="tech-stack">HTML</span>
-                    <span class="tech-stack">LARAVEL</span>    
+                    <span class="tech-stack">WORDPRESS</span>
+                    <span class="tech-stack">UI/UX</span>
+                    <span class="tech-stack">CUSTOM WEB</span>    
                 </div>
             </div>
             <div class="">

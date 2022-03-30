@@ -66,13 +66,13 @@
             <div class="vertical-line mb-3"></div>   
             <p>bonifacio.chloesophia@gmail.com</p>
             
-            <a href=""><i class="fab fa-github mb-3"></i></a>
+            <a href="https://gitlab.com/bonifacio.chloesophia" target="_blank"><i class="fab fa-gitlab mb-3"></i></a>
             
-            <a href=""><i class="fab fa-linkedin-in mb-3"></i></a>
+            <a href="https://github.com/ChloeBonifacio" target="_blank"><i class="fab fa-github mb-3"></i></a>
             
-            <a href=""><i class="fab fa-facebook-f mb-3"></i></a>
+            <a href="https://www.linkedin.com/in/chloe-bonifacio/" target="_blank"><i class="fab fa-linkedin-in mb-3"></i></a>
             
-            <a href=""><i class="fab fa-instagram mb-3"></i></a>
+            <a href="https://www.facebook.com/ChloweeBee" target="_blank"><i class="fab fa-facebook-f mb-3"></i></a>
         </div>
 
         <div class="container-fluid">

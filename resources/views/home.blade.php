@@ -25,7 +25,7 @@
 
     {{-- Info Section --}}
     <div class="row my-5 py-5 justify-content-center" id="infoSection">
-        <div class="col-lg-2 px-5">
+        <div class="col-lg-3 col-md-4 px-5">
             <div class="card text-center info-card">   
                 <div class="card-body">
                     <img src="{{ URL::asset('/images/designerIcon.png') }}" class="mb-3" alt="Design Icon">
@@ -46,7 +46,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-2 px-5">
+        <div class="col-lg-3 col-md-4 px-5">
             <div class="card text-center info-card">   
                 <div class="card-body">
                     <img src="{{ URL::asset('/images/developerIcon.png') }}" class="mb-3" alt="Design Icon">
@@ -67,7 +67,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-2 px-5">
+        <div class="col-lg-3 col-md-4 px-5">
             <div class="card text-center info-card">   
                 <div class="card-body">
                     <img src="{{ URL::asset('/images/mentorIcon.png') }}" class="mb-3" alt="Design Icon">
@@ -195,9 +195,9 @@
                         <div class="ribbon"><span>WORDPRESS</span></div>
                         <div class="overlay">
                             <div class="tech-stack-list">
-                                <span class="tech-stack">CSS</span>
-                                <span class="tech-stack">HTML</span>
-                                <span class="tech-stack">LARAVEL</span>    
+                                <span class="tech-stack">WORDPRESS</span>
+                                <span class="tech-stack">UI/UX</span>
+                                <span class="tech-stack">CUSTOM WEB</span>    
                             </div>
                         </div>
                         <div class="">
