@@ -66,7 +66,7 @@
             <div class="vertical-line mb-3"></div>   
             <p>bonifacio.chloesophia@gmail.com</p>
             
-            <a href=""><i class="fab fa-gitlab mb-3"></i></a>
+            <a href=""><i class="fab fa-github mb-3"></i></a>
             
             <a href=""><i class="fab fa-linkedin-in mb-3"></i></a>
             
@@ -83,7 +83,7 @@
 
     <footer class="footer">
         <h4>Made with <i class="fas fa-heart custom-pink"></i> by Chloe</h4>
-        <p>Check ouy website frontend code in <a href="#" class="custom-pink">GitLab</a></p>
+        <p>Check out website frontend code in <a href="https://github.com/ChloeBonifacio/chloe-personal-portfolio-v1.git" class="custom-pink">GitHub</a></p>
     </footer>
 
 
