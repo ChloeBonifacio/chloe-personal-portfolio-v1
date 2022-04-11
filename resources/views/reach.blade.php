@@ -37,9 +37,9 @@
     </div>
     <div class="col-lg-2"></div>
     <div class="col-lg-2 text-center">
-        <a class="btn btn-round btn-pink-round raise" href="#"><img src="{{ URL::asset('/images/upwork.png') }}" alt="Upwork"></a>
+        <a class="btn btn-round btn-pink-round raise" href="#"><img src="{{ URL::asset('/images/upwork.png') }}" class="upwork" id="upwork" alt="Upwork"></a>
         <h5 class="my-4">Got any job for me? You can also contact me through Upwork or Fiverr</h5>
-        <a class="btn btn-round btn-pink-round raise" href="#"><img src="{{ URL::asset('/images/fiverr.png') }}" alt="Fiverr"></a>
+        <a class="btn btn-round btn-pink-round raise" href="#"><img src="{{ URL::asset('/images/fiverr.png') }}" id="fiverr" alt="Fiverr"></a>
     </div>
 </div>
 @endsection

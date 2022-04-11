@@ -188,10 +188,15 @@ textarea.form-control:focus{
 
 @media(max-width:768px){
     .info-card p{
-        width: 50%;
+        width: 75%;
         margin: auto;
     }
     .main-picture{
         display: none;
     }
+}
+
+.upwork{
+    margin-top: 10px;
+    scale: 80%;
 }

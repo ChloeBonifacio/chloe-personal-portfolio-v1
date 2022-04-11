@@ -13,8 +13,8 @@
     </div>
 </div>
 
-<div class="row px-5 row-cols-lg-3">
-    <div class="col-lg-4 justify-content-center mb-5 pb-5">
+<div class="row px-lg-5 row-cols-lg-3">
+    <div class="col-lg-4 col-md-6 justify-content-center mb-5 pb-5">
         <div class="work-card mx-auto mb-3">
             <div class="ribbon"><span>FULL STACK</span></div>
             <div class="overlay">
@@ -35,7 +35,7 @@
             </div>
         </div>
     </div>
-    <div class="col-lg-4 mb-5 pb-5">
+    <div class="col-lg-4 col-md-6 mb-5 pb-5">
         <div class="work-card mx-auto mb-3">
             <div class="ribbon"><span>WORDPRESS</span></div>
             <div class="overlay">
@@ -56,7 +56,7 @@
             </div>
         </div>
     </div>
-    <div class="col-lg-4 mb-5 pb-5">
+    <div class="col-lg-4 col-md-6 mb-5 pb-5">
         <div class="work-card mx-auto mb-3">
             <div class="ribbon"><span>FRONTEND</span></div>
             <div class="overlay">
@@ -77,7 +77,7 @@
             </div>
         </div>
     </div>
-    <div class="col-lg-4 mb-5 pb-5">
+    <div class="col-lg-4 col-md-6 mb-5 pb-5">
         <div class="work-card mx-auto mb-3">
             <div class="ribbon"><span>FRONTEND</span></div>
             <div class="overlay">

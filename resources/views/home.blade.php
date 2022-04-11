@@ -24,8 +24,8 @@
     </div>
 
     {{-- Info Section --}}
-    <div class="row my-5 py-5 justify-content-center" id="infoSection">
-        <div class="col-lg-3 col-md-4 px-5">
+    <div class="row my-5 py-5 px-3 justify-content-center" id="infoSection">
+        <div class="col-lg-3 col-md-4">
             <div class="card text-center info-card">   
                 <div class="card-body">
                     <img src="{{ URL::asset('/images/designerIcon.png') }}" class="mb-3" alt="Design Icon">
@@ -46,7 +46,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-3 col-md-4 px-5">
+        <div class="col-lg-3 col-md-4">
             <div class="card text-center info-card">   
                 <div class="card-body">
                     <img src="{{ URL::asset('/images/developerIcon.png') }}" class="mb-3" alt="Design Icon">
@@ -67,7 +67,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-3 col-md-4 px-5">
+        <div class="col-lg-3 col-md-4">
             <div class="card text-center info-card">   
                 <div class="card-body">
                     <img src="{{ URL::asset('/images/mentorIcon.png') }}" class="mb-3" alt="Design Icon">
@@ -95,8 +95,8 @@
         <div class="col-lg-3 text-lg-start text-md-start text-center mb-3">
             <h1 class="large-title">My Services</h1>
             <p>I may have a solution that you need. Contact me or check my freelancing profiles to hire me!</p>
-            <a class="btn btn-round btn-dark-round raise" href="#"><img src="{{ URL::asset('/images/upwork.png') }}" alt="Upwork"></a>
-            <a class="btn btn-round btn-dark-round raise" href="#"><img src="{{ URL::asset('/images/fiverr.png') }}" alt="Fiverr"></a>
+            <a class="btn btn-round btn-dark-round raise" href="#"><img src="{{ URL::asset('/images/upwork.png') }}" class="upwork" id="upwork" alt="Upwork"></a>
+            <a class="btn btn-round btn-dark-round raise" href="#"><img src="{{ URL::asset('/images/fiverr.png') }}" id="fiverr" alt="Fiverr"></a>
         </div>
         <div class="col mx-3 my-3 px-3">
             <div class="card service-card" data-aos="fade-up" data-aos-duration="2500">
@@ -165,11 +165,11 @@
     </div>
 
     {{-- Latest Works Section --}}
-    <div class="row my-5 px-5 justify-content-center py-5">
+    <div class="row my-5 px-lg-5 justify-content-center py-5">
         <h1 class="large-title text-center">Latest Works</h1>
         <div class="col-lg-8 my-5">
            <div class="row row-cols-lg-2">
-                <div class="col-lg-6 justify-content-center mb-5 pb-5">
+                <div class="col-lg-6 col-md-6 justify-content-center mb-5 pb-5">
                     <div class="work-card mx-auto mb-3">
                         <div class="ribbon"><span>FULL STACK</span></div>
                         <div class="overlay">
@@ -190,7 +190,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 mb-5 pb-5">
+                <div class="col-lg-6 col-md-6 mb-5 pb-5">
                     <div class="work-card mx-auto mb-3">
                         <div class="ribbon"><span>WORDPRESS</span></div>
                         <div class="overlay">
@@ -211,7 +211,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 mb-5 pb-5">
+                <div class="col-lg-6 col-md-6 mb-5 pb-5">
                     <div class="work-card mx-auto mb-3">
                         <div class="ribbon"><span>FRONTEND</span></div>
                         <div class="overlay">
@@ -232,7 +232,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 mb-5 pb-5">
+                <div class="col-lg-6 col-md-6 mb-5 pb-5">
                     <div class="work-card mx-auto mb-3">
                         <div class="ribbon"><span>FRONTEND</span></div>
                         <div class="overlay">
