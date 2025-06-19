@@ -49,7 +49,7 @@
     <link rel="stylesheet" href="{{ URL::asset("/css/main.css") }}">
 
     {{-- FontAwesome --}}
-    <script src="https://kit.fontawesome.com/f67ab1f0a2.js" crossorigin="anonymous"></script>
+    <link href="{{ asset('lib\fontawesome-6.1.2\css\all.min.css') }}" rel="stylesheet">
 
     {{-- AOS --}}
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -66,24 +66,24 @@
             <div class="vertical-line mb-3"></div>   
             <p>bonifacio.chloesophia@gmail.com</p>
             
-            <a href="https://gitlab.com/bonifacio.chloesophia" target="_blank"><i class="fab fa-gitlab mb-3"></i></a>
+            <a class="c-primary" href="https://gitlab.com/bonifacio.chloesophia" target="_blank"><i class="c-primary fab fa-gitlab mb-3"></i></a>
             
-            <a href="https://github.com/ChloeBonifacio" target="_blank"><i class="fab fa-github mb-3"></i></a>
+            <a class="c-primary" href="https://github.com/ChloeBonifacio" target="_blank"><i class="c-primary  fab fa-github mb-3"></i></a>
             
-            <a href="https://www.linkedin.com/in/chloe-bonifacio/" target="_blank"><i class="fab fa-linkedin-in mb-3"></i></a>
+            <a class="c-primary" href="https://www.linkedin.com/in/chloe-bonifacio/" target="_blank"><i class="c-primary  fab fa-linkedin-in mb-3"></i></a>
             
-            <a href="https://www.facebook.com/ChloweeBee" target="_blank"><i class="fab fa-facebook-f mb-3"></i></a>
+            <a class="c-primary" href="https://www.facebook.com/ChloweeBee" target="_blank"><i class="c-primary  fab fa-facebook-f mb-3"></i></a>
         </div>
 
-        <div class="container-fluid">
+        <div class="container-fluid"  style="min-height: 50vh">
             @yield('content')
         </div>
         
     </main>
 
     <footer class="footer">
-        <h4>Made with <i class="fas fa-heart custom-pink"></i> by Chloe</h4>
-        <p>Check out website frontend code in <a href="https://github.com/ChloeBonifacio/chloe-personal-portfolio-v1.git" class="custom-pink">GitHub</a></p>
+        <h4>Made with <i class="fas fa-heart c-primary"></i> by Chloe</h4>
+        <p>Check out website frontend code in <a href="https://github.com/ChloeBonifacio/chloe-personal-portfolio-v1.git" class="c-primary">GitHub</a></p>
     </footer>
 
 

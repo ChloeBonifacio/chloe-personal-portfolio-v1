@@ -1,14 +1,19 @@
 /* Work Cards */
+.work-card-wrapper{
+    box-shadow: 0 5px 20px rgba(83, 83, 83, 0.395);
+    border-radius: 15px;
+}
 .work-card{
-    width:100%;height:300px;
+    width:100%;height:250px;
     position:relative;
-    border-radius: 25px;
+    border-radius: 15px;
     border: none;
+    
 }
 
 @media(max-width:768px){
     .work-card{
-        width:300px;height:200px;
+        height:200px;
     }
 }
 
@@ -16,7 +21,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 25px;
+    border-radius: 15px 15px 0 0px;
 }
 
 .overlay{
@@ -24,7 +29,7 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    border-radius: 25px;
+    border-radius: 15px 15px 0 0px;
     align-items: center;
     visibility: visible;
     opacity:0;
@@ -49,31 +54,6 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.281);
 }
 
-.ribbon {
-    position: absolute;
-    left: -5px; top: -5px;
-    z-index: 1;
-    overflow: hidden;
-    width: 75px; height: 75px; 
-    text-align: left;
-}
-
-.ribbon span {
-    font-size: 10px;
-    color: #fff; 
-    text-transform: uppercase; 
-    text-align: center;
-    font-weight: bold; line-height: 20px;
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    width: 100px; display: block;
-    background: #79A70A;
-    background: linear-gradient(var(--lightPink) 0%, var(--secondaryPink) 100%);
-    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
-    position: absolute;
-    top: 19px; left: -21px;
-}
-
 .work-title{
     font-weight: bold;
     font-size: larger;
@@ -81,12 +61,12 @@
 
 .work-icon-links a{
     text-align: center;
-    padding-top: 8px;
-    margin: 0 10px;
-    width: 35px;
-    height: 35px;
-    border: 1px solid white;
-    color: white;
+    padding-top: 6px;
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--lightPink);
+    color: var(--lightPink);
     border-radius: 50%;
     transition: ease 0.3s;
 }
@@ -94,4 +74,40 @@
 .work-icon-links a:hover{
     color: var(--lightPink);
     border-color: var(--lightPink);
+}
+
+.hidden {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+
+input[type=checkbox]+label {
+    color: #6F7070;
+    border: 1px solid #6F7070;
+    padding: 0 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+input[type=checkbox]:checked+label {
+    color: white;
+    background-color: var(--lightPink);
+    border: 1px solid var(--lightPink);
+}
+
+.work-tag{
+    padding: 3px 20px;
+    color: var(--lightPink);
+    border: 1px solid var(--lightPink);
+    border-radius: 5px;
+}
+
+.work-img{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(83, 83, 83, 0.395);
 }

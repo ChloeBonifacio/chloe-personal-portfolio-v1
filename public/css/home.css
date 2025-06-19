@@ -41,7 +41,7 @@
     background-image: linear-gradient(to right, var(--secondaryPink), var(--lightPink), var(--secondaryPurple));
 }
 .service-card{
-    background-color: var(--primaryDark);
+    background-color: white;
     border-radius: 25px;
 }
 .service-num{

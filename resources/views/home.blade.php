@@ -5,6 +5,7 @@
 @section('css')
     <link rel="stylesheet" href="{{ URL::asset('/css/home.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('/css/work.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/css/blog.css') }}">
 @endsection
 
 @section('content')
@@ -91,15 +92,15 @@
     </div>
 
     {{-- Services Section --}}
-    <div class="row my-5 py-5 px-5 align-items-center" id="serviceSection">
+    <div class="row mt-5 py-5 px-5 align-items-center" id="serviceSection">
         <div class="col-lg-3 text-lg-start text-md-start text-center mb-3">
-            <h1 class="large-title">My Services</h1>
-            <p>I may have a solution that you need. Contact me or check my freelancing profiles to hire me!</p>
+            <h1 class="large-title c-white">My Services</h1>
+            <p class="c-white">I may have a solution that you need. Contact me or check my freelancing profiles to hire me!</p>
             <a class="btn btn-round btn-dark-round raise" href="#"><img src="{{ URL::asset('/images/upwork.png') }}" class="upwork" id="upwork" alt="Upwork"></a>
             <a class="btn btn-round btn-dark-round raise" href="#"><img src="{{ URL::asset('/images/fiverr.png') }}" id="fiverr" alt="Fiverr"></a>
         </div>
-        <div class="col mx-3 my-3 px-3">
-            <div class="card service-card" data-aos="fade-up" data-aos-duration="2500">
+        <div class="col text-center mx-3 my-3 px-3" data-aos="fade-up" data-aos-duration="2500">
+            <div class="card text-start service-card">
                 <div class="card-body p-0">
                     <div class="p-3">
                         <p class="mb-0 service-num">01</p>
@@ -115,12 +116,12 @@
                         </ul>
                     </div>
                 </div>
-                <a class="btn btn-custom-gradient btn-translate ms-auto raise">CONTACT ME</a>
+                
             </div>
-            
+            <a class="btn btn-white c-primary ms-auto mt-3 raise">CONTACT ME</a>
         </div>
-        <div class="col mx-3 my-3 px-3">
-            <div class="card service-card" data-aos="fade-up" data-aos-duration="2000">
+        <div class="col text-center mx-3 my-3 px-3" data-aos="fade-up" data-aos-duration="2500">
+            <div class="card text-start service-card">
                 <div class="card-body p-0">
                     <div class="p-3">
                         <p class="mb-0 service-num">02</p>
@@ -136,12 +137,12 @@
                         </ul>
                     </div>
                 </div>
-                <a class="btn btn-custom-gradient btn-translate ms-auto raise">CONTACT ME</a>
+                
             </div>
-            
+            <a class="btn btn-white c-primary ms-auto mt-3 raise">CONTACT ME</a>
         </div>
-        <div class="col mx-3 my-3 px-3">
-            <div class="card service-card" data-aos="fade-up" data-aos-duration="1500">
+        <div class="col text-center mx-3 my-3 px-3" data-aos="fade-up" data-aos-duration="2500">
+            <div class="card text-start service-card">
                 <div class="card-body p-0">
                     <div class="p-3">
                         <p class="mb-0 service-num">03</p>
@@ -157,133 +158,93 @@
                         </ul>
                     </div>
                 </div>
-                <a class="btn btn-custom-gradient btn-translate ms-auto raise">CONTACT ME</a>
+                
             </div>
-            
+            <a class="btn btn-white c-primary ms-auto mt-3 raise">CONTACT ME</a>
         </div>
         <div class="col-lg-1"></div>
     </div>
 
     {{-- Latest Works Section --}}
-    <div class="row my-5 px-lg-5 justify-content-center py-5">
-        <h1 class="large-title text-center">Latest Works</h1>
-        <div class="col-lg-8 my-5">
-           <div class="row row-cols-lg-2">
-                <div class="col-lg-6 col-md-6 justify-content-center mb-5 pb-5">
-                    <div class="work-card mx-auto mb-3">
-                        <div class="ribbon"><span>FULL STACK</span></div>
-                        <div class="overlay">
-                            <div class="tech-stack-list">
-                                <span class="tech-stack">CSS</span>
-                                <span class="tech-stack">HTML</span>
-                                <span class="tech-stack">LARAVEL</span>    
+    <div class="row px-lg-5">
+        <div class="col-12 col-lg-11 my-5">
+            <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center mb-4">
+                <h1 class="large-title c-primary my-0">LATEST WORKS</h1>
+                <a class="btn-action-view" href="">VIEW ALL MY WORKS <i class="fa-regular fa-circle-right"></i></a>
+            </div>
+           <div class="row row-cols-lg-3">
+            @foreach (range(1,3) as $x)
+                <div class="col-lg-4 col-md-6 justify-content-center mb-3">
+                    <div class="work-card-wrapper pb-3">
+                        <div class="work-card mb-3">
+                            <div class="ribbon"><span>FULL STACK</span></div>
+                            <div class="overlay">
+                                <div class="tech-stack-list">
+                                    <span class="tech-stack">CSS</span>
+                                    <span class="tech-stack">HTML</span>
+                                    <span class="tech-stack">LARAVEL</span>    
+                                </div>
+                            </div>
+                            <div class="">
+                                <img src="{{ URL::asset('/images/jobposting.png') }}" alt="Sample Work">
+                            </div>
+                           
+                            
+                        </div>
+                        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center px-3 mt-2">
+                            <p class="work-title mb-0">Job Posting Website</p>
+                            <div class="d-flex justify-content-center work-icon-links">
+                                <a href=""><i class="fa-solid fa-info"></i></a>
+                                <a href=""><i class="fa-solid fa-eye"></i></a>
+                                <a href=""><i class="fa-brands fa-gitlab"></i></a>
                             </div>
                         </div>
-                        <div class="">
-                            <img src="{{ URL::asset('/images/jobposting.png') }}" alt="Sample Work">
-                        </div>
-                        <p class="work-title text-center m-2">Job Posting Website</p>
-                        <div class="d-flex justify-content-center work-icon-links">
-                            <a href=""><i class="fas fa-info"></i></a>
-                            <a href=""><i class="fas fa-eye"></i></a>
-                            <a href=""><i class="fab fa-gitlab"></i></a>
-                        </div>
                     </div>
+                    
                 </div>
-                <div class="col-lg-6 col-md-6 mb-5 pb-5">
-                    <div class="work-card mx-auto mb-3">
-                        <div class="ribbon"><span>WORDPRESS</span></div>
-                        <div class="overlay">
-                            <div class="tech-stack-list">
-                                <span class="tech-stack">WORDPRESS</span>
-                                <span class="tech-stack">UI/UX</span>
-                                <span class="tech-stack">CUSTOM WEB</span>    
-                            </div>
-                        </div>
-                        <div class="">
-                            <img src="{{ URL::asset('/images/enet.png') }}" alt="Sample Work">
-                        </div>
-                        <p class="work-title text-center m-2">E-Net Philippines Website</p>
-                        <div class="d-flex justify-content-center work-icon-links">
-                            <a href=""><i class="fas fa-info"></i></a>
-                            <a href=""><i class="fas fa-eye"></i></a>
-                            <a href=""><i class="fab fa-gitlab"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 mb-5 pb-5">
-                    <div class="work-card mx-auto mb-3">
-                        <div class="ribbon"><span>FRONTEND</span></div>
-                        <div class="overlay">
-                            <div class="tech-stack-list">
-                                <span class="tech-stack">CSS</span>
-                                <span class="tech-stack">HTML</span>
-                                <span class="tech-stack">LARAVEL</span>    
-                            </div>
-                        </div>
-                        <div class="">
-                            <img src="{{ URL::asset('/images/aguora.png') }}" alt="Sample Work">
-                        </div>
-                        <p class="work-title text-center m-2">Aguora Company Website</p>
-                        <div class="d-flex justify-content-center work-icon-links">
-                            <a href=""><i class="fas fa-info"></i></a>
-                            <a href=""><i class="fas fa-eye"></i></a>
-                            <a href=""><i class="fab fa-gitlab"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 mb-5 pb-5">
-                    <div class="work-card mx-auto mb-3">
-                        <div class="ribbon"><span>FRONTEND</span></div>
-                        <div class="overlay">
-                            <div class="tech-stack-list">
-                                <span class="tech-stack">CSS</span>
-                                <span class="tech-stack">HTML</span>
-                                <span class="tech-stack">LARAVEL</span>    
-                            </div>
-                        </div>
-                        <div class="">
-                            <img src="{{ URL::asset('/images/retando.png') }}" alt="Sample Work">
-                        </div>
-                        <p class="work-title text-center m-2">Ret and Ro e-Commerce</p>
-                        <div class="d-flex justify-content-center work-icon-links">
-                            <a href=""><i class="fas fa-info"></i></a>
-                            <a href=""><i class="fas fa-eye"></i></a>
-                            <a href=""><i class="fab fa-gitlab"></i></a>
-                        </div>
-                    </div>
-                </div>
+            @endforeach
+                
+                
                
                 
            </div>
         </div>
     </div>
 
-    {{-- Contact Section --}}
-    <div class="row my-5 px-5 justify-content-center py-5" data-aos="fade-up" data-aos-duration="2000" id="contactSection">
-        <h1 class="large-title text-center mb-5">Contact Me</h1>
-        <div class="col-lg-2">
-            <p>For any sort of help or inquiries, feel free to send me an <a class="custom-pink fw-bold" href="mailto:bonifacio.chloesophia@gmail.com">email</a> and I’ll get back to you soon.</p>
-            <p class="fw-bold custom-pink">Social Links</p>
-            <a href=""><i class="fas fa-angle-right custom-pink me-2"></i>Facebook</a><br>
-            <a href=""><i class="fas fa-angle-right custom-pink me-2"></i>Twitter</a><br>
-            <a href=""><i class="fas fa-angle-right custom-pink me-2"></i>Instagram</a><br>
-            <a href=""><i class="fas fa-angle-right custom-pink me-2"></i>LinkedIn</a>
-        </div>
-        <div class="col-lg-4 mt-3">
-            <form action="">
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
-                    <input type="text" class="form-control" placeholder="Your Name">
+    {{-- Latest Blogs Section --}}
+    <div class="row px-lg-5">
+        <div class="col-12 col-lg-11 mb-5">
+            <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center mb-4">
+                <h1 class="large-title c-primary my-0">LATEST BLOGS</h1>
+                <a class="btn-action-view" href="">VIEW ALL MY BLOGS <i class="fa-regular fa-circle-right"></i></a>
+            </div>
+           <div class="row row-cols-lg-3">
+            @foreach (range(1,3) as $x)
+                <div class="col-lg-4 col-md-6 justify-content-center mb-3">
+                    <div class="blog-card mx-auto d-flex gap-2">
+                        <div class="ribbon"><span>FULL STACK</span></div>
+                        <img src="{{ URL::asset('/images/jobposting.png') }}" alt="Sample Work">
+                        <div class="blog-info p-3">
+                            <p class="blog-title">Title of my blog content</p>
+                            <p class="blog-excerpt">Don’t want to dive into developing yet? Turn your dream website into reality through visualization and prototyping. </p>
+                            <div class="blog-footer d-flex justify-content-between align-items-center">
+                                <p class="blog-date mb-0">{{Carbon\Carbon::now()->format('m/d/Y')}}</p>
+                                <a class="btn-action-view" href=""><i class="fa-regular fa-circle-right fa-xl"></i></a>
+                            </div>
+                        </div>   
+                    </div>
+                    
                 </div>
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1"><i class="fas fa-at"></i></span>
-                    <input type="email" class="form-control" placeholder="Email Address">
-                </div>
-                <textarea name="content" cols="30" rows="10" class="form-control">Type your message here...</textarea>
-            </form>
+            @endforeach
+                
+                
+               
+                
+           </div>
         </div>
     </div>
+
+    @include('includes.contact')
 @endsection
 
 @section('script')

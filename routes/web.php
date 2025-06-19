@@ -25,6 +25,14 @@ Route::get('/my-works', function () {
     return view('works');
 })->name('works');
 
+Route::get('/my-blogs', function () {
+    return view('blogs');
+})->name('blogs');
+
+Route::get('/view-work', function () {
+    return view('work_view');
+})->name('works.view');
+
 Route::get('/reach', function () {
     return view('reach');
 })->name('reach');

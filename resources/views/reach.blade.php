@@ -15,12 +15,12 @@
 
 <div class="row my-5 px-5 py-5" data-aos="fade-up" data-aos-duration="2000" id="contactSection">
     <div class="col-lg-2 mb-3">
-        <p>For any sort of help or inquiries, feel free to send me an <a class="custom-pink fw-bold" href="mailto:bonifacio.chloesophia@gmail.com">email</a> and I’ll get back to you soon.</p>
-        <p class="fw-bold custom-pink">Social Links</p>
-        <a href=""><i class="fas fa-angle-right custom-pink me-2"></i>Facebook</a><br>
-        <a href=""><i class="fas fa-angle-right custom-pink me-2"></i>Twitter</a><br>
-        <a href=""><i class="fas fa-angle-right custom-pink me-2"></i>Instagram</a><br>
-        <a href=""><i class="fas fa-angle-right custom-pink me-2"></i>LinkedIn</a>
+        <p>For any sort of help or inquiries, feel free to send me an <a class="c-primary fw-bold" href="mailto:bonifacio.chloesophia@gmail.com">email</a> and I’ll get back to you soon.</p>
+        <p class="fw-bold c-primary">Social Links</p>
+        <a class="c-primary" href=""><i class="fas fa-angle-right c-primary me-2"></i>Facebook</a><br>
+        <a class="c-primary" href=""><i class="fas fa-angle-right c-primary me-2"></i>Twitter</a><br>
+        <a class="c-primary" href=""><i class="fas fa-angle-right c-primary me-2"></i>Instagram</a><br>
+        <a class="c-primary" href=""><i class="fas fa-angle-right c-primary me-2"></i>LinkedIn</a>
     </div>
     <div class="col-lg-5 mb-3">
         <form action="">
